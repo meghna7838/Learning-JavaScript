@@ -84,3 +84,14 @@ console.log(b);
 console.log(typeof b); 
 // Here one thing to note is that the type will come as object its explanation 
 // would be provided later.
+
+
+//6. Symbol(ES6/2015)
+//This would be exlained later
+
+//7. BigInt(ES2020)
+// Number is supposed to be till 64 bit above that we will have to use Bigint 
+// It is hardly used.
+ let m = 10n;
+ console.log(m);
+ console.log(typeof m);
