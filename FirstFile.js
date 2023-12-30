@@ -46,3 +46,19 @@ myName="Tandon";
 let num = 10;
 console.log(num);
 console.log(typeof num);
+
+
+//2. String
+
+const firstName="Meghna";
+const lastName='Tandon';
+const nickName=`Frosty`;
+
+//All above definations of string are correct
+
+console.log(firstName);
+console.log(typeof firstName);
+console.log(lastName);
+console.log(typeof lastName);
+console.log(nickName);
+console.log(typeof nickName);
