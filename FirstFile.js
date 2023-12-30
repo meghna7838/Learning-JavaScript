@@ -76,3 +76,11 @@ console.log(typeof isTrue);
 let a ;
 console.log(a);
 console.log(typeof a);
+
+//5. Null
+
+let b =null;
+console.log(b);
+console.log(typeof b); 
+// Here one thing to note is that the type will come as object its explanation 
+// would be provided later.
