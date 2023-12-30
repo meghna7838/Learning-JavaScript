@@ -34,3 +34,15 @@ myName="Tandon";
 /* Multiple Line Comments              ---Multiline comments
    can be written inside these
    */
+
+/* Data Types are of two types in JS
+1. Object :- Different from other programming language but we will be talking about it a little later. 
+2. Primitive Data Types 
+
+/* Primitive Data Type*/
+
+//1. Number
+
+let num = 10;
+console.log(num);
+console.log(typeof num);
