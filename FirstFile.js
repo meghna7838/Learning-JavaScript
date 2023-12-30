@@ -27,3 +27,10 @@ var myName="Meghna";
 myName="Tandon";
 
 //All of the above are valid and have no error.
+
+
+//Comments
+// ---Single line comment
+/* Multiple Line Comments              ---Multiline comments
+   can be written inside these
+   */
