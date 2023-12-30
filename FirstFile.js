@@ -70,3 +70,9 @@ let isTrue=false;
 
 console.log(isTrue);
 console.log(typeof isTrue);
+
+//4. Undefined
+
+let a ;
+console.log(a);
+console.log(typeof a);
