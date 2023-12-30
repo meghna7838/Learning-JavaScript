@@ -62,3 +62,11 @@ console.log(lastName);
 console.log(typeof lastName);
 console.log(nickName);
 console.log(typeof nickName);
+
+
+//3. Boolean
+
+let isTrue=false;
+
+console.log(isTrue);
+console.log(typeof isTrue);
