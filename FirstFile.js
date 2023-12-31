@@ -112,3 +112,16 @@ let wid = prompt("Please enter wid");
 
 let area = main(len,wid);
 console.log(area);
+
+
+/* Type Coercion - Implicit conversion of data type of the variable when used with different airthematic operation*/
+
+//Additon Operator
+let var1='5';
+let var2=5;
+let var3 = var1+var2;
+console.log(typeof var3);
+console.log(var3);
+
+
+
