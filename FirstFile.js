@@ -95,3 +95,20 @@ console.log(typeof b);
  let m = 10n;
  console.log(m);
  console.log(typeof m);
+
+ console.log(5&&7);
+
+ function main(len,wid){
+    let result;
+    //Write the program to calculate the area of rectangle using len and wid as length and width of rectangle
+    
+   result = len* wid;
+    
+    return result;
+    }
+
+let len = prompt("Please enter len");
+let wid = prompt("Please enter wid");
+
+let area = main(len,wid);
+console.log(area);
