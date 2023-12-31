@@ -122,6 +122,38 @@ let var2=5;
 let var3 = var1+var2;
 console.log(typeof var3);
 console.log(var3);
+//Here the ans is of type is string and output is 55 which means that when string 
+//is added with number number also behaves as string and concatination of string 
+//happens
+
+//Subtraction operator
+
+var1='55';
+var2=10;
+var3=var1-var2;
+console.log(typeof var3);
+console.log(var3);
+//Here ans is of type number and the output is 45. Hence when used with 
+//subtraction string behaves as number and hence the output is the one we see.
+
+// Multiplication
+
+var1='5';
+var2=10;
+var3=var1*var2;
+console.log(typeof var3);
+console.log(var3);
+//Here ans is of type number and the output is 50. Hence when used with 
+//multiplication string behaves as number and hence the output is the one we see.
 
 
+//Division 
+
+var1='55';
+var2=5;
+var3=var1/var2;
+console.log(typeof var3);
+console.log(var3);
+//Here ans is of type number and the output is 11. Hence when used with 
+//division string behaves as number and hence the output is the one we see.
 
