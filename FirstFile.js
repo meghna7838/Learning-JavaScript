@@ -229,6 +229,20 @@ console.log(Boolean("gh"));
 console.log(Boolean(undefined));
 console.log(Boolean("false"));// Value comes as true becoz it is unempty string
 
+//****************SWITCH******************
+switch ("Apple") {
+    case "Apple":
+        console.log("This is an apple");        
+        break;
+    case "Kiwi":
+        console.log("This is a kiwi");
+        break;
+    default:
+        console.log("Neither Kiwi nor Apple")
+        break;
+}
+console.log("Outside Switch");
+
 
 
 
