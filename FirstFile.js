@@ -219,6 +219,15 @@ console.log("***************ParseFloat()**********");
 console.log(parseFloat("12345f"));
 console.log(parseFloat("123,45gh"));
 
+//Boolean
+console.log("**************Boolean***************");
+console.log(Boolean(100));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean("gh"));
+console.log(Boolean(undefined));
+console.log(Boolean("false"));// Value comes as true becoz it is unempty string
+
 
 
 
