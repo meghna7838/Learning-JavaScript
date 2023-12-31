@@ -243,6 +243,14 @@ switch ("Apple") {
 }
 console.log("Outside Switch");
 
+//*************************Ternary Operator***************/
+
+let num12=5;
+
+num%2 ==0?
+console.log("Even"):
+console.log("Odd");
+
 
 
 
