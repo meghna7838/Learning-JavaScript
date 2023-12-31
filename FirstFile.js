@@ -157,3 +157,7 @@ console.log(var3);
 //Here ans is of type number and the output is 11. Hence when used with 
 //division string behaves as number and hence the output is the one we see.
 
+console(true+true);
+//when used in numeric context it is utomatically converted to number 1 hence here
+//output will be 2
+
