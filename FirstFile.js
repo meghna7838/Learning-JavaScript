@@ -157,7 +157,70 @@ console.log(var3);
 //Here ans is of type number and the output is 11. Hence when used with 
 //division string behaves as number and hence the output is the one we see.
 
-console(true+true);
+console.log(true+true);
 //when used in numeric context it is utomatically converted to number 1 hence here
 //output will be 2
+/* Type conversion :- explicit conversion of var from one datatype to another
+Type conversion is of three types
+1. ToString
+2. ToNumber
+3. ToBoolean
+*/
+
+// To String 
+//a) String();
+console.log("************String********");
+console.log(String(123));
+console.log(String(true));
+console.log(String(null));
+console.log(String(undefined));
+
+//No errors in above code
+
+//b) ToString()
+console.log("************ToString***********");
+console.log((123).toString());
+console.log((true).toString());
+//console.log((null).toString()); -Error
+//console.log((undefined).toString()); -Error
+
+//We cannot conver null and undefined to string using to String() method it gives error if we try to. We can convert them using String funtion.
+
+
+//To Number
+//a) number()
+console.log("********Number***********");
+console.log(Number('12'));
+console.log(Number('value'));//NaN
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(null));
+console.log(Number(undefined));//NaN
+
+//NaN is not a number
+
+//b) Using unary operator
+console.log("************Unary Operator************");
+let abc= "123";
+console.log(+abc);
+let abcd="123N";
+console.log(+abcd);//NaN
+
+//c) ParseInt()
+console.log("************ParseInt()*************");
+console.log(parseInt("12345"));
+console.log(parseInt("123456f"));//Here behvaiour is different from number instead of NaN it will give 123456
+console.log(parseInt("1234.56g"));//Ouput is 1234 only integer value is returned
+console.log(parseInt("123f4567g"));
+console.log(parseInt("f56789f"));//NaN shouldnt start with alphabet
+
+//d) ParseFloat() :behaviour same as parseInt() it returns float/decimal number
+console.log("***************ParseFloat()**********");
+console.log(parseFloat("12345f"));
+console.log(parseFloat("123,45gh"));
+
+
+
+
+
 
