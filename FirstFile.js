@@ -217,7 +217,8 @@ console.log(parseInt("f56789f"));//NaN shouldnt start with alphabet
 //d) ParseFloat() :behaviour same as parseInt() it returns float/decimal number
 console.log("***************ParseFloat()**********");
 console.log(parseFloat("12345f"));
-console.log(parseFloat("123,45gh"));
+console.log(parseFloat("123.45gh"));
+console.log(parseFloat("123.56.78"));
 
 //Boolean
 console.log("**************Boolean***************");
