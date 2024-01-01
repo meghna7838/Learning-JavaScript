@@ -272,8 +272,14 @@ switch(true){
         discount="50% Discount";  
 }
 
+//For Loop
+// for(Iniitalize;Condition;Operation){//Body;}}
+//Program to print all odd number 
 
-
+for(let i=1;i<=50;i+=2)
+{
+    console.log(i);
+}
 
 
 
