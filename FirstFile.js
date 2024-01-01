@@ -347,3 +347,14 @@ function squared(number)
 
 let abcde= squared(2);
 console.log("Square of number 2 is "+ abcde);
+
+
+//Arrays
+//Arrays are heterogenous in nature i.e. it can has more than one type of data 
+
+const students=["sumukha","Meghu","Lala","Lali"];
+console.log(students);
+
+const car = new Array("car1","car2",1,true);
+console.log(car);
+//No error can store more than one type. It can even store function.
