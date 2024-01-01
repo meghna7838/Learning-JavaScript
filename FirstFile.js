@@ -308,6 +308,15 @@ do {
 num = prompt("Enter a number");
 }while(num<=50)
 
+//**********Function***********/
+//Code reusability
+//No point of creating a function if we are not reusing it
+//Unparameterized Function
 
+function greetUser(){
+    console.log("Hello!! Welcome to my github account");
+}
+
+greetUser();
 
 
