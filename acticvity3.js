@@ -1,23 +1,40 @@
-function isValidIdentifier(name)
-{
-    let isTrue=true;
-    for(let i=0;i<name.length;i++){
-        if((name.charCodeAt(i)>=32 && name.charCodeAt(i)<36) ||(name.charCodeAt(i)>=37 && name.charCodeAt(i)<=47)|| (name.charCodeAt(i)>=58 && name.charCodeAt(i)<=64)||(name.charCodeAt(i)>=91 && name.charCodeAt(i)<95)||(name.charCodeAt(i)>=123 && name.charCodeAt(i)<=126)|| name.charCodeAt(i)===96){
-            console.log(name+" is not a valid identifier");
-            isTrue=false;
-        break;
-        }
-
+function isValidIdentifier(identifier) {
+    if (identifier === "" || !isNaN(identifier[0])) {
+      console.log(identifier + " is not a valid identifier.");
+      return;
     }
-   
-    if(name.startsWith('1')||name.startsWith('2')||name.startsWith('3')||name.startsWith('4')||name.startsWith('5')||name.startsWith('6')||name.startsWith('7')||name.startsWith('8')||name.startsWith('9')||name.startsWith('0')){
-        console.log(name+" is not a valid identifier");
-        isTrue=false;
+    else{
+      flag =true;
+    for (var i = 0; i < identifier.length; i++) {
+      var char = identifier[i];
+  
+      // Check if the character is a letter, digit, underscore, or dollar sign
+      if (
+        !(
+          (char >= "a" && char <= "z") ||
+          (char >= "A" && char <= "Z") ||
+          char === "_" ||
+          char === "$" ||
+          (!isNaN(char) && i > 0) // Allow digits after the first character
+        )
+      ) {
+          flag =false;
+      //   console.log(identifier + " is not a valid identifier.");
+      }
     }
-
-    if(isTrue){
-    console.log(name + "is a valid identifier");
+  if(flag){
+    console.log(identifier + " is a valid identifier.");
+  }
+  else{
+      
+        console.log(identifier + " is not a valid identifier.");
+      
+  }
     }
-}
-
-isValidIdentifier("abvms_er23$");
+  }
+  
+  // Example usage
+  isValidIdentifier("myVariable"); // Logs: myVariable is a valid identifier.
+  isValidIdentifier("123abc"); // Logs: 123abc is not a valid identifier.
+  isValidIdentifier("_pr&ivate"); // Logs: _pr&ivate is not a valid identifier.
+  
