@@ -273,12 +273,29 @@ switch(true){
 }
 
 //For Loop
+//entry controlled loop
+//Used when we are sure of number of iterations
 // for(Iniitalize;Condition;Operation){//Body;}}
 //Program to print all odd number 
 
 for(let i=1;i<=50;i+=2)
 {
     console.log(i);
+}
+
+//While Loop
+//Entry Controlled loop
+//Used when we are not sure of number of iterations 
+//While(consition){//Body;}
+//Program to print each digit from the number given
+
+num =12345;
+
+while(num!==0)
+{
+    let digit = num%10;
+    num = parseInt(num/10);//ParseInt because otherwise we will get float 
+    console.log(digit);
 }
 
 
