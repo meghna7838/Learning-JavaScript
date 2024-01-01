@@ -336,3 +336,14 @@ function sum(num1=0,num2=0)//Default Parameter
 }
 sum(2,3);
 sum(2);//Output is NaN as num1 =2 num2 =undefined
+
+
+//Return statement
+
+function squared(number)
+{
+    return number*number;
+}
+
+let abcde= squared(2);
+console.log("Square of number 2 is "+ abcde);
