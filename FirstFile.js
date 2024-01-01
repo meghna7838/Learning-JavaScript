@@ -327,3 +327,11 @@ console.log("Hello "+username+ "!!, Welcome to my github account");
 
 greetUserName("Sumukha");
 
+//Template Literals 
+function sum(num1,num2)
+{
+    //console.log("sum of two number is :"+num1 +num2); -> output here is 23 if we want to make it work then we have to do console.log("sum of two number is :"+(num1 +num2));
+    //Template Literal usage
+    console.log(`Sum of two number is : ${num1 +num2}`);
+}
+sum(2,3);
