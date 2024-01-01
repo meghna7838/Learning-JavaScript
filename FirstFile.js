@@ -328,10 +328,11 @@ console.log("Hello "+username+ "!!, Welcome to my github account");
 greetUserName("Sumukha");
 
 //Template Literals 
-function sum(num1,num2)
+function sum(num1=0,num2=0)//Default Parameter
 {
     //console.log("sum of two number is :"+num1 +num2); -> output here is 23 if we want to make it work then we have to do console.log("sum of two number is :"+(num1 +num2));
     //Template Literal usage
     console.log(`Sum of two number is : ${num1 +num2}`);
 }
 sum(2,3);
+sum(2);//Output is NaN as num1 =2 num2 =undefined
