@@ -319,4 +319,12 @@ function greetUser(){
 
 greetUser();
 
+//Parameterized Function
+function greetUserName(username)
+{
+console.log("Hello "+username+ "!!, Welcome to my github account");
+}
+
+greetUserName("Sumukha");
+
 
