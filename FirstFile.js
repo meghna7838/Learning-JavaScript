@@ -298,6 +298,16 @@ while(num!==0)
     console.log(digit);
 }
 
+//Do while Loop
+//Exit controlled loop
+//Will be executed at least one
+//do{//Body;}while(condition)
+//Program to enter num till number is greater than 50
+
+do {
+num = prompt("Enter a number");
+}while(num<=50)
+
 
 
 
