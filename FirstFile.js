@@ -514,3 +514,19 @@ console.log(newBatch2);
 
 const mergedBatch = [...mayBatch,...juneBatch];
 console.log(mergedBatch);
+
+
+//Set
+//complete the function mergeArray
+//Do not alter the starter code.
+let arr1 = [1,2,4,5,7];
+let arr2 = [3,4,6,7,9,0];
+function mergeArray(arr1,arr2){
+    //Implemet your function here
+    const result = [...arr1,...arr2];
+    const myset= new Set(result);
+    const result2 = Array.from(myset);
+    return result2;
+}
+console.log(mergeArray(arr1,arr2));
+//Output : [1,2,4,5,7,3,6,9,0]
