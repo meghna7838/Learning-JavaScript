@@ -429,3 +429,25 @@ function reverseString(str){
     {
         console.log(`Roll no ${i+1} : ${students1[i]}`);
     }
+
+    //Complete the deleteOccur function
+//Do not alter the starter Code.
+let arr = [23, 56, 4, 78, 5, 63, 45, 210, 56];
+let ele = 56;
+function deleteOccur(arr,ele){
+   //Implement Your function here
+    for(let i=arr.length-1;i>=0;i--){
+        if(arr[i]===ele)
+            {
+                arr.splice(i,1);
+            }
+    }
+    return arr;
+};
+
+console.log('['+deleteOccur(arr,ele)+']');
+//Output: [23,4,78,5,63,45,210];
+
+/*The issue with your code is that when you use arr.splice(i, 1) to remove an element from the array, it modifies the 
+array in-place, which means the length of the array decreases, and the indices of the remaining elements shift. This 
+can lead to skipping elements during the iteration, and you may end up not checking all occurrences of the element.*/
