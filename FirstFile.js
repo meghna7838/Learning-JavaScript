@@ -358,3 +358,29 @@ console.log(students);
 const car = new Array("car1","car2",1,true);
 console.log(car);
 //No error can store more than one type. It can even store function.
+
+const teams=["SRK","MI","DD","LGT"];
+
+//Methods used in array
+//1) Addition in array
+//  a)Push():- returns the length of array
+
+len= teams.push("GT");
+console.log(len);
+console.log(teams);
+
+//  b)unshift():- returns the length of array
+len= teams.unshift("KKR");
+console.log(len);
+console.log(teams);
+
+//2)Deletion in array
+//  a)Pop():- returns the element that is deleted.
+len = teams.pop();
+console.log(len);
+console.log(teams);
+
+//  b)shift():- returns the elements that is deleted.
+len = teams.shift();
+console.log(len);
+console.log(teams);
