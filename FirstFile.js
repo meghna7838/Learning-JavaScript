@@ -404,3 +404,13 @@ const teams2 = ["India","SriLanka","Autralia"];
 const mergedTeams= teams.concat(teams2);
 
 console.log(mergedTeams);
+
+function reverseString(str){
+    //Implement Your function here
+        let arr = Array.from(str);
+        let arr2 = arr.reverse();
+        let result= arr2.join('');
+        return result;
+    }
+    console.log(reverseString("Hello"));
+    //Output : "olleH"
