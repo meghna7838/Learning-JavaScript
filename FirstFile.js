@@ -414,3 +414,18 @@ function reverseString(str){
     }
     console.log(reverseString("Hello"));
     //Output : "olleH"
+
+    //Loop over arrays
+    let students1 = [
+        'Tina',
+        'Raj',
+        'Bobby',
+        'Seema',
+        'Alexa',
+        'Sita'
+    ]
+
+    for(i=0;i<students1.length;i++)
+    {
+        console.log(`Roll no ${i+1} : ${students1[i]}`);
+    }
