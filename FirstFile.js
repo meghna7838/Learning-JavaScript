@@ -384,3 +384,23 @@ console.log(teams);
 len = teams.shift();
 console.log(len);
 console.log(teams);
+
+//3) Check if element is present or not 
+//  a)slice(no of elements to be sliced) :- Doesnt change original array. Can take both negative and positive value.
+console.log(teams);
+console.log(teams.slice(2));
+console.log(teams);
+console.log(teams.slice(-1));
+console.log(teams);
+console.log(teams.slice());
+//  b)splice():- Can simultaneously add and delete elements. Make changes in original array. First argument is the index
+// second is how many elements to be deleted on that index. Third onwards we add whatever is present.
+teams.splice(2,0,"GT","KKR");
+console.log(teams);
+
+//4) Concat()- do not modify the original array. 
+const teams2 = ["India","SriLanka","Autralia"];
+
+const mergedTeams= teams.concat(teams2);
+
+console.log(mergedTeams);
