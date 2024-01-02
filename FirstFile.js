@@ -530,3 +530,20 @@ function mergeArray(arr1,arr2){
 }
 console.log(mergeArray(arr1,arr2));
 //Output : [1,2,4,5,7,3,6,9,0]
+
+//Objects
+
+const studentobj= {
+    name:"Alexa",
+    age:10,
+    hobby:"Dancing",
+    100:"Hundred",
+    show:function(){//Anonymous function
+        console.log("This is student section");
+    }
+}
+
+console.log(studentobj);
+console.log(studentobj.name);//Dot Notation
+console.log(studentobj["name"]);//Block notation
+studentobj.show();
