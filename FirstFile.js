@@ -451,3 +451,27 @@ console.log('['+deleteOccur(arr,ele)+']');
 /*The issue with your code is that when you use arr.splice(i, 1) to remove an element from the array, it modifies the 
 array in-place, which means the length of the array decreases, and the indices of the remaining elements shift. This 
 can lead to skipping elements during the iteration, and you may end up not checking all occurrences of the element.*/
+
+//Complete the findDuplicate function
+
+arr = [4, 2, 34, 4, 1, 12, 1, 4];
+function findDuplicate(arr){
+//Implement your function here
+	let ans=[];
+    let counter=0;
+    for(let i=0;i<arr.length;i++)
+        {
+        for(let j=i+1;j<arr.length;j++)
+            {
+                if(arr[i]===arr[j])
+                    {
+                        if(!ans.includes(arr[i]))
+                            {
+                       ans.push(arr[i]); 
+                            }
+                    }
+            }
+        }
+    return ans;
+}    
+console.log(findDuplicate(arr));
