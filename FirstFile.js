@@ -475,3 +475,42 @@ function findDuplicate(arr){
     return ans;
 }    
 console.log(findDuplicate(arr));
+
+//Rest operator(...):- 
+
+const aprilBatch=["Tina","Madhuri"];
+const mayBatch=["Rithik","Deepak","Shalini"];
+const juneBatch=["Saba","Shivani"];
+const julyBatch=[];
+
+function addStudents(Batch,...students)
+{
+    for(let i of students)
+    {
+        Batch.push(students);
+    }
+    console.log(Batch);
+}
+
+//Spread Operator :- used for shallow copy an element. Shallow copy means if we change original array copied array will not have any changes
+
+const newBatch=mayBatch;
+console.log(mayBatch);
+console.log(newBatch);
+mayBatch.push("NewStudent");
+console.log(mayBatch);
+console.log(newBatch);
+
+//Here we will see both will get modified to avoid this
+
+const newBatch2 = [...mayBatch];
+console.log(mayBatch);
+console.log(newBatch2);
+mayBatch.push("NewStudent2");
+console.log(mayBatch);
+console.log(newBatch2);
+
+//Spread Operator can also be used for concatination
+
+const mergedBatch = [...mayBatch,...juneBatch];
+console.log(mergedBatch);
