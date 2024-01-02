@@ -532,6 +532,7 @@ console.log(mergeArray(arr1,arr2));
 //Output : [1,2,4,5,7,3,6,9,0]
 
 //Objects
+//We can define object before defining/declaring a class in java script
 
 const studentobj= {
     name:"Alexa",
