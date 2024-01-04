@@ -151,3 +151,29 @@ console.log(URLconstructor(queryParameters,domain,path));
         }
         console.log(calculatePrice(goods));
         //output : 650
+
+//Hoisting:- The concept where one can use variables and function without even declaring is called hoisting.
+
+console.log("Username:"+username);
+console.log("UserAge:"+userage);
+greetUser(username);
+
+var username="tom";
+var userage="10";
+
+console.log("Username:"+username);
+console.log("UserAge:"+userage);
+
+function greetUser(name)
+{
+    var greet = "I hope you are doing fine";
+    console.log("hello"+name+greet);
+    var currentYear=2030;
+    const year = currentYear - userage;
+    return `Your birth age is ${year} `;
+}
+
+console.log(greetUser(username));
+
+
+
