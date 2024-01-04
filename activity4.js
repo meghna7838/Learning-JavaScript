@@ -176,4 +176,27 @@ function greetUser(name)
 console.log(greetUser(username));
 
 
+var varName=10;
+let letName=20;
+const constName=30;
+
+function print(){
+var varLocal=10;
+let letLocal=20;
+const constLocal=30;
+console.log(varLocal,letLocal,constLocal);
+console.log(varName,letName,constName);
+}
+//console.log(varLocal,letLocal,constLocal);//Error
+console.log(varName,letName,constName);
+print();
+
+{
+    var varName1=10;
+    let letName1=20;
+    const constName1=30;
+
+}
+//console.log(varName1,letName1,constName1);
+//const and let has functional and block scope whereas var varNAme1 wont be giving any issue even if it is declared in different block.
 
