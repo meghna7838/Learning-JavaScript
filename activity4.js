@@ -200,3 +200,27 @@ print();
 //console.log(varName1,letName1,constName1);
 //const and let has functional and block scope whereas var varNAme1 wont be giving any issue even if it is declared in different block.
 
+//scope Chaining 
+
+var a=10;
+let b =20;
+const c =30;
+
+function print(){
+    var a ="ten";
+    let b ="twenty";
+    console.log("**** Inside print function ****");
+    console.log(a,b,c);
+    console.log("***************");
+
+    function inPrint(){
+        var a = "inner10";
+        console.log("* Inside innerprint function*");
+        console.loh(a,b,c);
+    } 
+    inPrint();
+}
+console.log(a,b,c);
+print();
+
+
