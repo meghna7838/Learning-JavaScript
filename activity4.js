@@ -202,25 +202,50 @@ print();
 
 //scope Chaining 
 
-var a=10;
-let b =20;
-const c =30;
+// var a=10;
+// let b =20;
+// const c =30;
 
-function print(){
-    var a ="ten";
-    let b ="twenty";
-    console.log("**** Inside print function ****");
-    console.log(a,b,c);
-    console.log("***************");
+// function print(){
+//     var a ="ten";
+//     let b ="twenty";
+//     console.log("**** Inside print function ****");
+//     console.log(a,b,c);
+//     console.log("***************");
 
-    function inPrint(){
-        var a = "inner10";
-        console.log("* Inside innerprint function*");
-        console.loh(a,b,c);
-    } 
-    inPrint();
+//     function inPrint(){
+//         var a = "inner10";
+//         console.log("* Inside innerprint function*");
+//         console.loh(a,b,c);
+//     } 
+//     inPrint();
+// }
+// console.log(a,b,c);
+// print();
+
+var a = 10;
+let b = 20;
+var c = 30;
+
+function print() {
+  var a = 'ten';
+  let b = 'twenty';
+
+  console.log('***** Inside print Function*****');
+  console.log(a, b, c);
+  console.log('***** *****');
+
+  function innerPrint() {
+    var a = 'inner10';
+    console.log('*Inside innerPrint Function*');
+    console.log(a, b, c);
+  }
+  innerPrint();
 }
-console.log(a,b,c);
+
 print();
+console.log(a, b, c);
 
-
+var x=10;
+let x=20;
+console.log(x);
