@@ -246,7 +246,7 @@ function print() {
 print();
 console.log(a, b, c);
 
-var x=10;
+var x1=10;
 let x=20;
 console.log(x);
 
@@ -259,3 +259,16 @@ function outer(){
     }
     //console.log(x+y+z);//Error
 }
+
+let a1 = 'Global';
+
+function outerPrint(){
+    let b1 ='OuterPrint';
+    function innerPrint(){
+        let c1 ='InnerPrint';
+        return `${a1} -> ${b1} -> ${c1}`;
+    }
+    const show =innerPrint();
+    console.log(show);
+}
+outerPrint();
