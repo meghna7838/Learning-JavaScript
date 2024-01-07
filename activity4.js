@@ -262,7 +262,7 @@ function outer(){
 
 let a1 = 'Global';
 
-function outerPrint(){
+return function outerPrint(){
     let b1 ='OuterPrint';
     function innerPrint(){
         let c1 ='InnerPrint';
@@ -270,6 +270,6 @@ function outerPrint(){
     }
     // const show =innerPrint();
     // console.log(show);
-    return innerPrint;//Valid
+    //return innerPrint;//Valid
 }
 outerPrint();
