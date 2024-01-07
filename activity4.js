@@ -268,7 +268,8 @@ function outerPrint(){
         let c1 ='InnerPrint';
         return `${a1} -> ${b1} -> ${c1}`;
     }
-    const show =innerPrint();
-    console.log(show);
+    // const show =innerPrint();
+    // console.log(show);
+    return innerPrint;//Valid
 }
 outerPrint();
