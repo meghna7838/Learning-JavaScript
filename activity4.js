@@ -273,4 +273,23 @@ function outerPrint(){
     //return innerPrint;//Valid
 }
 const show = outerPrint();
-console.log(show);
+const printInnneer = show();
+console.log(printInnneer);
+
+function cart(){
+    let items = 0;
+    return {
+        addItem: function(){
+            items++;
+        },
+        getItem: function(){
+            return items;
+        }
+    };
+}
+
+const closure = cart();
+closure.addItem();
+closure.addItem();
+closure.addItem();
+console.log(closure.getItem());
