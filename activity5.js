@@ -18,3 +18,16 @@ return a+b;
 console.log(sum2);// output will come out to be function definition
 console.group(sum2(2,3));//5
 //If we move the above lines to line 13 then we will get error because we are 
+
+
+//Arrow Function
+var prod = (num1,num2) => {
+    return num1*num2;
+}
+console.log(prod(2,3));
+
+//The above function can also be written as following
+
+var product = (num1,num2) => num1*num2;
+
+console.log(product(3,4));
