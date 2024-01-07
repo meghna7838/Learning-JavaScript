@@ -272,4 +272,5 @@ function outerPrint(){
     // console.log(show);
     //return innerPrint;//Valid
 }
-outerPrint();
+const show = outerPrint();
+console.log(show);
