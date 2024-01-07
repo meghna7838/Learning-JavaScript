@@ -262,9 +262,9 @@ function outer(){
 
 let a1 = 'Global';
 
-return function outerPrint(){
+function outerPrint(){
     let b1 ='OuterPrint';
-    function innerPrint(){
+    return function innerPrint(){
         let c1 ='InnerPrint';
         return `${a1} -> ${b1} -> ${c1}`;
     }
