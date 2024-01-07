@@ -293,3 +293,18 @@ closure.addItem();
 closure.addItem();
 closure.addItem();
 console.log(closure.getItem());
+
+//Closure are created when object methods, functions returned from other functions or functions accessing variables in the global scope retain access retain access to their arent scopes, enabling persistent access to those variables.
+function generateID(items){
+    //Implement Your function here
+        return function func1(){
+            var str = "A_2023_"+items++;
+
+            return str;
+        }
+        
+    }
+    
+    const func = generateID(99);
+    console.log(func());//Output : A_2023_99
+    console.log(func()); // Output: A_2023_100
