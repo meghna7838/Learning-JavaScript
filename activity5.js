@@ -131,3 +131,14 @@ greet(sayHello());
 greet(goodMoring());
 
 //Callback functions have major implementations at time of asynchornous Javascript
+
+/* functions returning Functions*/
+
+function greetagain(message){
+    return function (wishes){
+        console.log(`${wishes},${message}`);
+    };
+}
+
+const greeting = greetagain("Hope you are doing well");
+greeting("Hello")
