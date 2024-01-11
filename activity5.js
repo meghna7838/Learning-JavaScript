@@ -100,3 +100,7 @@ console.log(calDiscount(350));
 function consolation(){
     discount=discount-3;//Making changes in an external element hence impure
 }
+
+function consolation2(){
+    console.log("Hello");//Using console log hence impure
+}
