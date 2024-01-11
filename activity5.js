@@ -104,3 +104,30 @@ function consolation(){
 function consolation2(){
     console.log("Hello");//Using console log hence impure
 }
+
+//Calback Function
+
+//When we give function as argument of other functions
+/*Callback Function*/
+
+function greet(wish){
+    console.log(`${wish}, Welcome to my github`);
+}
+function sayHi(){
+    return 'Hi';
+}
+
+function sayHello(){
+    return 'Hello';
+}
+
+function goodMoring()
+{
+    return "Good Morning";
+}
+
+greet(sayHi());
+greet(sayHello());
+greet(goodMoring());
+
+//Callback functions have major implementations at time of asynchornous Javascript
