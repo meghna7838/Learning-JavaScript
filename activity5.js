@@ -76,3 +76,15 @@ function main() {
     return userAuth;
   }
   
+  //Pure functions
+  //1.A function that return same output for same set of inpur. So , its O/P is not manipulated by any external factor\\
+  //2.This function should not even manipulate any external element.
+  //3.Even console.log makes the function as impure because this is not js provided funcn instead it is provided by web API
+  /*Pure Factor*/
+
+  function calculate(num1,num2)
+  {
+    return num1*num2;
+  }
+console.log(calculate(2,3));//6
+//The above function is pure function
