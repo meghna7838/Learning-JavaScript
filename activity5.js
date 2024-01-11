@@ -88,3 +88,11 @@ function main() {
   }
 console.log(calculate(2,3));//6
 //The above function is pure function
+
+//Impure function example
+let discount =35;
+function calDiscount(num1)
+{
+return num1-discount;
+}
+console.log(calDiscount(350));
