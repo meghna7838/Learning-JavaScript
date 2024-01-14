@@ -140,5 +140,8 @@ function greetagain(message){
     };
 }
 
-const greeting = greetagain("Hope you are doing well");
-greeting("Hello")
+// const greeting = greetagain("Hope you are doing well");
+// greeting("Hello");
+
+greetagain("Hope you are doing well")("Hello!!!");
+
