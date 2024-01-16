@@ -43,6 +43,31 @@
 
     console.log(High(inputs,cube));
   
-  
+    function pizzaPricing(size)
+    {
+       
+        return function(toppings)
+        {
+            return function(quantity)
+            {
+                let totalPrice=0;
+                if(size ==="Small")
+                {
+                    totalPrice+=8;
+                }else if (size ==="Medium")
+                {
+                    totalPrice+=10;
+                }else
+                {
+                    totalPrice+=12;
+                }
+
+                totalPrice+=t(oppings.length*1.5);
+                totalPrice*=quantity;
+                return totalPrice;
+            }
+        }
+    }
+    
 
   
