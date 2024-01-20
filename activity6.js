@@ -68,6 +68,24 @@
             }
         }
     }
-    
 
-  
+    function increaseSalaries(employees){
+        const updatedEmployees = employees.map((employee) => {
+          let salary = employee.salary;
+          switch (employee.department) {
+            case "sales":
+              salary = (salary * 1.1).toFixed(1);
+              break;
+            case "engineering":
+              salary = (salary * 1.15).toFixed(1);
+              break;
+            default:
+              salary = (salary * 1.05).toFixed(1);
+              break;
+          }
+          return { ...employee, salary };
+        });
+        return updatedEmployees;
+      };
+      const employeee= increaseSalaries(employee);
+      console.log(employeee);
