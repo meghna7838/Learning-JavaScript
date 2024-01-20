@@ -69,6 +69,14 @@
         }
     }
 
+    const employees = [
+        { id: 1, name: "Alice", department: "sales", salary: 40000 },
+        { id: 2, name: "Bob", department: "engineering", salary: 50000 },
+        { id: 3, name: "Charlie", department: "marketing", salary: 45000 },
+        { id: 4, name: "David", department: "sales", salary: 35000 },
+        { id: 5, name: "Emily", department: "engineering", salary: 55000 }
+      ];
+
     function increaseSalaries(employees){
         const updatedEmployees = employees.map((employee) => {
           let salary = employee.salary;
@@ -87,5 +95,52 @@
         });
         return updatedEmployees;
       };
-      const employeee= increaseSalaries(employee);
+      const employeee= increaseSalaries(employees);
       console.log(employeee);
+
+      let people = [
+        { name: 'Matt', age: 25 },
+        { name: 'Asma', age: 23 },
+        { name: 'Asma1', age: 23 },
+        { name: 'Asma1', age: 23 },
+        { name: 'Cami1', age: 29 },
+        { name: 'Cami', age: 29 }
+      ];
+      
+      function groupBy(objectArray, property) {
+        return objectArray.reduce(function (acc, obj) {
+          let key = obj[property];
+          if (!acc[key]) {
+            acc[key] = [];
+          }
+
+          let newObj= {
+            key: [ obj.name]
+          };
+          acc[key].push(obj);
+          return acc;
+        }, {})
+      }
+      
+      let groupedPeople = groupBy(people, 'age')
+      console.log(groupedPeople);
+
+      const contacts = [
+        {name:"Alice",company:"ABC Inc"},
+        {name:"Bob",company:"XYZ Corp"},
+        {name:"Charlie",company:"ABC Inc"}
+    ];
+  
+    function mapContactsToCompanies(contacts) {
+
+        return contacts.reduce(function (obj, contact) {
+  
+          if(obj[contact.company]===undefined)
+          obj[contact.company] =[];
+
+          obj[contact.company].push(contact.name);
+          return obj;
+  
+        }, {});
+  
+      }
